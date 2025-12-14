@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 - 木更津第三中学校同窓会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>よくある質問 (Q&A)</h1>
+        <p>皆様から多く寄せられる質問をまとめました</p>
+
+        <div class="hamburger-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">TOPページ</a></li>
+                <li><a href="member.html">実行委員会幹部紹介</a></li>
+                <li><a href="venue.html">会場(舵輪)紹介</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="faq.html">Q&A（よくある質問）</a></li>
+            </ul>
+            <div class="close-btn" onclick="toggleMenu()">× 閉じる</div>
+        </nav>
+        </header>
+
+    <main>
+        
+        <section class="faq-section">
+            <h2>1. 出欠・参加資格について</h2>
+            
+            <div class="faq-item">
+                <p class="question">Q. 締め切り過ぎてしまいました。今からでも参加できますか？</p>
+                <p class="answer">A. 申し訳ありませんが、会場の手配の都合上、締め切り後の参加はできません。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 仕事（または着替え）で遅れるけど、途中参加は大丈夫？</p>
+                <p class="answer">A. 途中参加も可能です。ただし、会費は減額されずそのままの金額となりますのでご了承ください。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 途中退出はできますか？</p>
+                <p class="answer">A. 可能です。ご都合に合わせて退出いただけます。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 配偶者や子供を連れて行ってもいいですか？</p>
+                <p class="answer">A. 今回は卒業生と恩師の先生方のみの会となりますので、ご同伴のご希望には沿えません。</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>2. 会費およびキャンセルについて</h2>
+
+            <div class="faq-item">
+                <p class="question">Q. 当日キャンセルした場合、キャンセル料はかかりますか？</p>
+                <p class="answer">A. 当日キャンセルの場合、お店の規約により<span style="color: #c0392b; font-weight: bold;">参加費用の100％</span>をいただきます。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 支払方法を教えてください。</p>
+                <p class="answer">A. 当日、<strong>現金のみ</strong>受け付けております。PayPayやVISAなどキャッシュレス決済は対応しておりません。<br>また、受付混雑緩和のため<strong>お釣りが出ないように</strong>ご協力をお願いいたします。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 途中参加・途中退室の場合、会費は安くなりますか？</p>
+                <p class="answer">A. 滞在時間に関わらず、会費はそのまま100％いただきます。</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>3. 当日の運営・内容について</h2>
+
+            <div class="faq-item">
+                <p class="question">Q. お越しになる先生は誰ですか？</p>
+                <p class="answer">A. 当日のお楽しみです。懐かしい先生方にお声がけしております。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. 喫煙所はありますか？</p>
+                <p class="answer">A. ありません。会場内は<strong>全席禁煙</strong>です。</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="question">Q. アレルギー対応はしてくれますか？</p>
+                <p class="answer">A. 事前に皆様に実施したアレルギー調査に従い、対応いたします。<br>詳しくは鈴木まで個別にご連絡ください。</p>
+            </div>
+        </section>
+
+        <section class="contact-note">
+            <h3>その他のお問い合わせ</h3>
+            <p>上記で解決しないご不明な点がございましたら、お気軽に鈴木・小原、または以下のメールアドレスまでご連絡ください。</p>
+            <p style="text-align: center; margin-top: 15px;">
+                <a href="mailto:kisarazudaisan.dousoukai@gmail.com" class="btn-mail">✉️ kisarazudaisan.dousoukai@gmail.com</a>
+            </p>
+        </section>
+
+        <div class="button-container" style="margin-top: 40px;">
+            <a href="index.html" class="btn">トップページに戻る</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>木更津市立木更津第三中学校同窓会実行委員会</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    </body>
+</html>

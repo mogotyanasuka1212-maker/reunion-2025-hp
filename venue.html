@@ -9,8 +9,25 @@
 <body>
 
     <header>
-        <h1>会場紹介</h1>
-        <p>舵輪 DARIN Food, Society & Life</p>
+    <h1>会場紹介</h1>
+    <p>舵輪 DARIN Food, Society & Life</p>
+
+    <div class="hamburger-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="index.html">TOPページ</a></li>
+            <li><a href="member.html">実行委員会幹部紹介</a></li>
+            <li><a href="venue.html">会場(舵輪)紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="https://mogotyanasuka1212-maker.github.io/reunion-2025-hp/" target="_blank">Q&A（よくある質問）</a></li>
+        </ul>
+        <div class="close-btn" onclick="toggleMenu()">× 閉じる</div>
+    </nav>
     </header>
 
     <main>
@@ -47,9 +64,18 @@
 
     </main>
 
-    <footer>
+    
+<footer>
         <p>木更津市立木更津第三中学校同窓会実行委員会</p>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    </body>
+</html>
 </body>
 </html>
