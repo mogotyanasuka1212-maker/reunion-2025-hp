@@ -3,8 +3,9 @@ body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* 背景は薄いグレーで目に優しく */
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.8; /* ← ★これを追加してください！ */
 }
 
 /* ヘッダー（看板）のデザイン */
@@ -370,4 +371,11 @@ header {
     color: white; /* 文字を白に */
     font-weight: bold; /* 太文字に */
     border-left: 5px solid #fff; /* 左に白い線を入れてアクセントに */
+}
+
+/* --- 表の行にマウスが乗ったときの色変化 --- */
+tr:hover td {
+    background-color: #eaf2f8; /* 薄い青色に変化 */
+    transition: 0.3s; /* フワッと変化させる */
+    color: #2c3e50; /* 文字色も少し濃く */
 }
