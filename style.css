@@ -381,3 +381,42 @@ tr:hover td {
     transition: 0.3s; /* フワッと変化させる */
     color: #2c3e50; /* 文字色も少し濃く */
 }
+
+/* ▼▼▼ ここから追加：カウントダウンタイマーのデザイン ▼▼▼ */
+.countdown-section {
+    text-align: center;
+    background-color: #2c3e50; /* ヘッダーと色味を合わせる */
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.countdown-section h2 {
+    border: none; /* 既存の左線スタイルを解除 */
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px dashed rgba(255,255,255,0.3);
+}
+
+.countdown-timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.countdown-timer span {
+    font-size: 2.2rem;
+    color: #f1c40f; /* 黄色で数字を目立たせる */
+    font-family: "Courier New", Courier, monospace; /* 数字の幅を揃える */
+    margin: 0 5px;
+}
+
+/* スマホなど画面が狭い時の調整 */
+@media (max-width: 600px) {
+    .countdown-timer span {
+        font-size: 1.8rem;
+    }
+}

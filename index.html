@@ -37,6 +37,15 @@
 
     <main>
         <section class="greeting">
+            <section class="countdown-section">
+            <h2>同窓会開催まで</h2>
+            <div id="countdown" class="countdown-timer">
+                あと <span id="days">00</span>日 
+                <span id="hours">00</span>時間 
+                <span id="minutes">00</span>分 
+                <span id="seconds">00</span>秒
+            </div>
+        </section>
             <h2>開催のお知らせ</h2>
             <p>時下ますますご清栄のこととお慶び申し上げます。<br>
             さて、この度、下記のとおり同窓会を開催する運びとなりましたので、ご案内申し上げます。</p>
@@ -101,6 +110,37 @@
             const menu = document.getElementById('nav-menu');
             menu.classList.toggle('active');
         }
+        /* ▼▼▼ ここから追加：カウントダウンの計算処理 ▼▼▼ */
+        function updateCountdown() {
+            // 開催日時：2026年1月11日 16:30:00
+            const targetDate = new Date("2026-01-11T16:30:00"); 
+            const now = new Date();
+            const diff = targetDate - now;
+
+            // 開催時間を過ぎた場合の表示
+            if (diff <= 0) {
+                document.getElementById("countdown").innerHTML = "開催しました！";
+                return;
+            }
+
+            // 時間の計算
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // 画面への表示（ゼロ埋めして2桁にする）
+            document.getElementById("days").innerText = String(days).padStart(2, '0'); // 日数は3桁対応
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+        }
+
+        // 1秒ごとに更新する
+        setInterval(updateCountdown, 1000);
+        // ページ読み込み時に一度実行しておく
+        updateCountdown();
+        /* ▲▲▲ ここまで追加 ▲▲▲ */
     </script>
     </body>
 </html>
