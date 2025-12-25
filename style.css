@@ -420,3 +420,24 @@ tr:hover td {
         font-size: 1.8rem;
     }
 }
+
+/* ▼▼▼ ここから追加：ルート案内図のデザイン ▼▼▼ */
+.route-guide {
+    margin-bottom: 20px;
+}
+
+.route-guide p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.route-img {
+    width: 100%;       /* 横幅いっぱいに広げる */
+    height: auto;      /* 高さは自動調整 */
+    border-radius: 8px; /* 角を丸く */
+    border: 1px solid #ddd; /* 薄い枠線をつける */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 少し影をつける */
+}
+/* ▲▲▲ ここまで追加 ▲▲▲ */
